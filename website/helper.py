@@ -129,5 +129,5 @@ class NewRecommendationHelper:
             "usage": usage,
         }
 
-        images = get_recommendations(input)
-        return images
+        similar_items = get_recommendations(input)
+        return similar_items

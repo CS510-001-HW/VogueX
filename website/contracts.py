@@ -44,6 +44,7 @@ class RecommendationContractResponse:
 
 class NewRecommendationContractResponse:
     IMAGES = "images"
+    PRODUCT_DISPLAY_NAME = "productDisplayName"
 
 
 class PreferenceContractRequest:

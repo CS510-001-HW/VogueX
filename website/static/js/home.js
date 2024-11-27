@@ -32,9 +32,9 @@ $(document).ready(function(){
             success: function(data){
                 // Convert image paths to a format that can be sent in the URL
                 var imagePaths = data["images"].map(encodeURIComponent).join(',');
-                
+                var productNames = data["productDisplayName"].map(encodeURIComponent).join(',');
                 // Redirect to results.html with image paths in URL query
-                var redirectUrl = `${window.location.protocol}//${window.location.host}/results?images=${imagePaths}`;
+                var redirectUrl = `${window.location.protocol}//${window.location.host}/results?images=${imagePaths}&productNames=${productNames}`;
                 location.href = redirectUrl;
             },
             dataType: "json",

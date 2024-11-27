@@ -53,7 +53,7 @@ Contributions are welcome, and please see CONTRIBUTING.md for details. -->
                         <img src="{{ url_for('views.serve_images', filename=ldata[idx + j]) }}" alt="" id="Myimg{{ idx + j }}" class="d-block w-100">
                         <div class="btn-group" role="group" aria-label="buttonGroup">
                             <button id="show-img" type="button" class="blendbtn btn btn-primary rounded m-3" data-toggle="modal" data-target="#my-modal{{ idx + j }}"><b>View</b></button>
-                            <a class="nav-item nav-link nav-text buttonA" id="shop-link{{ idx + j }}" href="/shopping-results?{{ ldata[idx + j] }}"><b>Shop</b></a>
+                            <a class="nav-item nav-link nav-text buttonA" id="shop-link{{ idx + j }}" href="https://www.google.com/search?hl=en&udm=28&q={{image_names[idx + j]}}" target="_blank"><b>Shop</b></a>
 							<button id="favourite{{ idx + j }}" type="button" class="blendbtn btn btn-primary favourite rounded m-3" data-userid="{{ current_user.userid }}"><b>Favourite</b></button>
                         </div>
                     </div>

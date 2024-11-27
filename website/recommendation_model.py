@@ -110,7 +110,7 @@ def get_recommendations(user_input):
     # Retrieve top 10 similar items
     similar_items = data.iloc[top_10_indices]
 
-    return similar_items["image"]
+    return similar_items
 
 
 # # Run the function to test the model

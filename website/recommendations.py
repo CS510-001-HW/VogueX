@@ -7,6 +7,7 @@
 # contribution guidelines, a code of conduct, and a clear decision-making process.
 # Contributions are welcome, and please see CONTRIBUTING.md for details.
 
+import json
 import functools
 from flask import (
     Blueprint,
@@ -99,7 +100,7 @@ def get_newrecommendations():
     from . import helper
 
     help = helper.NewRecommendationHelper()
-    images = help.giveRecommendations(
+    similar_items = help.giveRecommendations(
         userid,
         gender,
         masterCategory,
@@ -111,12 +112,16 @@ def get_newrecommendations():
     )
     # print(images)
 
-    recommendations = {contracts.NewRecommendationContractResponse.IMAGES: []}
+    recommendations = {contracts.NewRecommendationContractResponse.IMAGES: [], contracts.NewRecommendationContractResponse.PRODUCT_DISPLAY_NAME: []}
 
     # Create a list of image paths relative to the web server's base directory
-    for image in images:
+    for item in similar_items["image"]:
         recommendations[contracts.NewRecommendationContractResponse.IMAGES].append(
-            image
+            item
+        )
+    for item in similar_items["productDisplayName"]:
+        recommendations[contracts.NewRecommendationContractResponse.PRODUCT_DISPLAY_NAME].append(
+            item
         )
 
     return jsonify(recommendations), 200

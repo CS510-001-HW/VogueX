@@ -73,8 +73,9 @@ def procResult():
 @login_required
 def results():
     image_paths = request.args.get("images", "").split(",")
+    image_names = request.args.get("productNames", "").split(",")
     return render_template(
-        "results.html", ldata=image_paths, user=current_user, enumerate=enumerate
+        "results.html", ldata=image_paths, image_names=image_names, user=current_user, enumerate=enumerate
     )
 
 
