@@ -14,13 +14,13 @@
 [![DOI](https://zenodo.org/badge/568223471.svg)](https://zenodo.org/badge/latestdoi/568223471)
 
 
-[![GitHub issues](https://img.shields.io/github/issues/mukunda-p/vogueX---Fashion-Recommender)](https://github.com/mukunda-p/vogueX---Fashion-Recommender/issues?q=is%3Aopen)
+[![GitHub issues](https://github.com/CS510-001-HW/VogueX/issues/6)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/mukunda-p/vogueX---Fashion-Recommender)](https://github.com/mukunda-p/vogueX---Fashion-Recommender/issues?q=is%3Aissue+is%3Aclosed)
-[![Github pull requests](https://img.shields.io/github/issues-pr/mukunda-p/vogueX---Fashion-Recommender)](https://github.com/mukunda-p/vogueX---Fashion-Recommender/pulls)
+[![Github pull requests](https://github.com/CS510-001-HW/VogueX/pulls)
 [![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/mukunda-p/vogueX---Fashion-Recommender)](https://github.com/mukunda-p/vogueX---Fashion-Recommender/pulls?q=is%3Apr+is%3Aclosed)
 
-[![github workflow](https://github.com/mukunda-p/vogueX---Fashion-Recommender/actions/workflows/style_checker.yml/badge.svg)](https://github.com/mukunda-p/vogueX---Fashion-Recommender/actions/workflows/style_checker.yml)
-[![github workflow](https://github.com/mukunda-p/vogueX---Fashion-Recommender/actions/workflows/main.yml/badge.svg)](https://github.com/mukunda-p/vogueX---Fashion-Recommender/actions/workflows/main.yml)
+[![github workflow](https://github.com/CS510-001-HW/VogueX/tree/main/.github/workflowl)
+[![github workflow](https://github.com/CS510-001-HW/VogueX/tree/main/.github/workflowl)
 
 ## 💎Description</br>
 Has it ever happened that you were all set with the perfect dress for your big day but you forgot to take a rain check? 
